@@ -7,7 +7,67 @@
     <title>Document</title>
   </head>
   <body>
-    dfghjkl;'lkjhghjkl;'
+    <section class="creator">
+      <div class="container">
+        <div class="creator__row">
+          <input type="text" class="row-creator__input" />
+          <button disabled="disabled" class="row-creator__btn">New</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="board">
+      <div class="container">
+        <div class="board__row">
+          <div class="row-board__backlog board-column">
+            <h2 class="board-column__title"></h2>
+            <div class="card">
+              <h3 class="card__title">Title</h3>
+              <div class="card__description">
+                <p>description...</p>
+              </div>
+              <div class="card__date">
+                <p>date...</p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Title</h3>
+              <div class="card__description">
+                <p>description...</p>
+              </div>
+              <div class="card__date">
+                <p>date...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-board__todo board-column">
+            <div class="card">
+              <h3 class="card__title">Title</h3>
+              <div class="card__description">
+                <p>description...</p>
+              </div>
+              <div class="card__date">
+                <p>date...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-board__done board-column">
+            <div class="card">
+              <h3 class="card__title">Title</h3>
+              <div class="card__description">
+                <p>description...</p>
+              </div>
+              <div class="card__date">
+                <p>date...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>
