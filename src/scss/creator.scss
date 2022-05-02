@@ -1,0 +1,44 @@
+.creator {
+  background-color: $white;
+  box-shadow: 0 0 3px $grey;
+
+  // .creator__row
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+
+}
+
+.row-creator {
+  // .row-creator__input
+
+  &__input {
+    line-height: 2rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    position: relative;
+    &::before {
+      height: 2rem;
+      width: 2rem;
+      content: 'fghjk';
+      // font-family: 'Font Awesome 5 Free';
+      position: absolute;
+      display: block;
+    }
+  }
+
+  // .row-creator__btn
+
+  &__btn {
+    padding: 0.2rem 0.5rem;
+    background-color: $deep-grey;
+    color: $white;
+    border-radius: 0.7rem;
+    border: none;
+  }
+}

@@ -1,0 +1,90 @@
+.board {
+  background-color: $light-grey;
+
+  // .board__row
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 -1rem;
+  }
+}
+.row-board {
+  // .row-board__backlog
+
+  &__backlog {
+  }
+
+  // .row-board__todo
+
+  &__todo {
+  }
+
+  // .row-board__done
+
+  &__done {
+  }
+}
+.board-column {
+  // .board-column__title
+
+  &__title {
+  }
+}
+.card {
+  margin: 1rem;
+  background-color: $white;
+  padding: 0.5rem;
+  width: 17rem;
+  box-shadow: 0px 0px 10px $grey;
+  position: relative;
+  // .card__title
+
+  &__title {
+    color: $deep-grey;
+    margin-bottom: 1rem;
+  }
+
+  // .card__description
+
+  &__description {
+    color: $grey;
+    margin-bottom: 1rem;
+  }
+
+  // .card__date
+
+  &__date p {
+    text-align: right;
+  }
+}
+
+.backlog-card::before {
+  content: '';
+  height: 100%;
+  width: 1rem;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: $orange;
+}
+
+.todo-card::before {
+  content: '';
+  height: 100%;
+  width: 1rem;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: $yellow;
+}
+
+.todo-done::before {
+  content: '';
+  height: 100%;
+  width: 1rem;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: $green;
+}
