@@ -1,0 +1,9 @@
+@mixin line($color) {
+  content: '';
+  height: 100%;
+  width: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: $color;
+}

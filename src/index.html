@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/index.scss" />
     <title>Document</title>
   </head>
   <body>
     <section class="creator">
       <div class="container">
         <div class="creator__row">
-          <input type="text" class="row-creator__input" />
+          <i class="far fa-search"></i>
+          <input type="text" class="row-creator__input" placeholder="todo..." />
           <button disabled="disabled" class="row-creator__btn">New</button>
         </div>
       </div>
@@ -20,8 +22,10 @@
       <div class="container">
         <div class="board__row">
           <div class="row-board__backlog board-column">
-            <h2 class="board-column__title"></h2>
-            <div class="card">
+            <h2 class="board-column__title">
+              Backlog
+            </h2>
+            <div class="card backlog-card">
               <h3 class="card__title">Title</h3>
               <div class="card__description">
                 <p>description...</p>
@@ -30,7 +34,7 @@
                 <p>date...</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card backlog-card">
               <h3 class="card__title">Title</h3>
               <div class="card__description">
                 <p>description...</p>
@@ -42,7 +46,10 @@
           </div>
 
           <div class="row-board__todo board-column">
-            <div class="card">
+            <h2 class="board-column__title">
+              Todo
+            </h2>
+            <div class="card todo-card">
               <h3 class="card__title">Title</h3>
               <div class="card__description">
                 <p>description...</p>
@@ -54,7 +61,10 @@
           </div>
 
           <div class="row-board__done board-column">
-            <div class="card">
+            <h2 class="board-column__title">
+              Done
+            </h2>
+            <div class="card todo-done">
               <h3 class="card__title">Title</h3>
               <div class="card__description">
                 <p>description...</p>

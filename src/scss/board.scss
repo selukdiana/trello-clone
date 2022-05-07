@@ -1,4 +1,7 @@
+@import './mixins/line.scss';
+
 .board {
+  min-height: 100vh;
   background-color: $light-grey;
 
   // .board__row
@@ -32,7 +35,7 @@
   }
 }
 .card {
-  margin: 1rem;
+  margin: 2rem 0.5rem;
   background-color: $white;
   padding: 0.5rem;
   width: 17rem;
@@ -60,31 +63,13 @@
 }
 
 .backlog-card::before {
-  content: '';
-  height: 100%;
-  width: 1rem;
-  position: absolute;
-  top: 0;
-  right: 100%;
-  background-color: $orange;
+  @include line($orange);
 }
 
 .todo-card::before {
-  content: '';
-  height: 100%;
-  width: 1rem;
-  position: absolute;
-  top: 0;
-  right: 100%;
-  background-color: $yellow;
+  @include line($yellow);
 }
 
 .todo-done::before {
-  content: '';
-  height: 100%;
-  width: 1rem;
-  position: absolute;
-  top: 0;
-  right: 100%;
-  background-color: $green;
+  @include line($green);
 }
