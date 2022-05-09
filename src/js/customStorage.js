@@ -1,13 +1,13 @@
 import Todo from './Todo.js';
 
-const todos = [new Todo('tt', 'sfg', 0), new Todo('tt222', 'sfg', 1)];
+const todos = getTodos() || [new Todo('Покормить кота', 'Завтра утром', 0)];
 
-function setStorageItem(name, value) {
-  localStorage.setItem(name, JSON.stringify(value));
+function setTodos(value) {
+  localStorage.setItem('todos', JSON.stringify(value));
 }
 
-function getStorageItem(name) {
-  return JSON.parse(localStorage.getItem(name));
+function getTodos() {
+  return JSON.parse(localStorage.getItem('todos'));
 }
 
-export { todos, setStorageItem, getStorageItem };
+export { todos, setTodos, getTodos };

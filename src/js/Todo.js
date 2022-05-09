@@ -11,8 +11,7 @@ function Todo(title, description, id) {
   this.description = description;
   this.completed = false;
   this.inProcess = false;
-  const date = new Date();
-  this.date = format(date, 'en_US');
+  this.date = new Date();
 }
 
 export default Todo;

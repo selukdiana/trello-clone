@@ -53,4 +53,9 @@ button {
   border-radius: 0.3rem;
   border: none;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover {
+  transform:scale(1.1);
 }

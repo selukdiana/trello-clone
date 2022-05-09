@@ -3,7 +3,7 @@ import createElement from './createElement.js';
 function createDate(date) {
   const todoDate = createElement('div', 'card__date');
   const span = createElement('p', '');
-  span.append(date);
+  span.setAttribute('datetime', date);
   todoDate.append(span);
   return todoDate;
 }
