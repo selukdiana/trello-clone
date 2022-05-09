@@ -1,0 +1,11 @@
+@mixin input() {
+  outline: none;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 100px #fff;
+  border: 1px solid #dde0e6;
+  color: #484c53;
+  font-size: 15px;
+  line-height: 26px;
+  padding: 15px 20px;
+  display: block;
+}

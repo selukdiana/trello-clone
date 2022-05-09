@@ -12,8 +12,10 @@
       <div class="container">
         <div class="creator__row">
           <i class="far fa-search"></i>
-          <input type="text" class="row-creator__input" placeholder="todo..." />
-          <button disabled="disabled" class="row-creator__btn">New</button>
+          <!-- <input type="text" class="row-creator__input" placeholder="todo..." /> -->
+          <button class="row-creator__btn" data-hystmodal="#myModal">
+            New
+          </button>
         </div>
       </div>
     </section>
@@ -22,33 +24,31 @@
       <div class="container">
         <div class="board__row">
           <div class="row-board__backlog board-column">
-            <h2 class="board-column__title">
-              Backlog
-            </h2>
-            <div class="card backlog-card">
-              <h3 class="card__title">Title</h3>
-              <div class="card__description">
-                <p>description...</p>
-              </div>
-              <div class="card__date">
-                <p>date...</p>
-              </div>
-            </div>
-            <div class="card backlog-card">
-              <h3 class="card__title">Title</h3>
-              <div class="card__description">
-                <p>description...</p>
-              </div>
-              <div class="card__date">
-                <p>date...</p>
-              </div>
-            </div>
+            <h2 class="board-column__title">Backlog</h2>
+            <ul class="backlog__list">
+              <li class="card backlog-card">
+                <h3 class="card__title">Title</h3>
+                <div class="card__description">
+                  <p>description...</p>
+                </div>
+                <div class="card__date">
+                  <p>date...</p>
+                </div>
+              </li>
+              <li class="card backlog-card">
+                <h3 class="card__title">Title</h3>
+                <div class="card__description">
+                  <p>description...</p>
+                </div>
+                <div class="card__date">
+                  <p>date...</p>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <div class="row-board__todo board-column">
-            <h2 class="board-column__title">
-              Todo
-            </h2>
+            <h2 class="board-column__title">Todo</h2>
             <div class="card todo-card">
               <h3 class="card__title">Title</h3>
               <div class="card__description">
@@ -61,9 +61,7 @@
           </div>
 
           <div class="row-board__done board-column">
-            <h2 class="board-column__title">
-              Done
-            </h2>
+            <h2 class="board-column__title">Done</h2>
             <div class="card todo-done">
               <h3 class="card__title">Title</h3>
               <div class="card__description">
@@ -77,7 +75,25 @@
         </div>
       </div>
     </section>
+    <div class="hystmodal" id="myModal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <button data-hystclose class="hystmodal__close">Закрыть</button>
+          <div class="todo-modal">
+            <h2>New todo...</h2>
+            <input class="title-input" type="text" placeholder="Title" />
+            <textarea
+              rows="3"
+              class="description-input"
+              placeholder="Description..."
+            ></textarea>
+            <button class="todo-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="./js/app.js"></script>
+    <script src="./js/hystmodal.min.js"></script>
   </body>
 </html>
